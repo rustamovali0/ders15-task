@@ -1,0 +1,251 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+nav li {
+  height: 4rem;
+  background-color: rgb(167, 232, 250);
+  margin: 20px;
+  border-radius: 5px;
+  font-size: 25px;
+  text-align: center;
+  padding: 19px;
+  border-bottom: 5px solid rgba(0, 0, 255, 0.342);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  color: rgb(52, 75, 179);
+}
+nav li:hover {
+  background-color: rgb(16, 77, 77);
+  color: rgb(255, 255, 255);
+  transition: 2ms ease-in;
+  border-bottom: 5px solid rgb(255, 255, 255);
+}
+.imgcontainer {
+  background-image: url(v2osk-1Z2niiBPg5A-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 38.5rem;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.item {
+  background-color: rgb(167, 232, 250);
+  height: 18.7rem;
+  margin: 20px;
+  border-radius: 5px;
+  font-size: 25px;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 3px solid rgba(0, 0, 255, 0.342);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  color: rgb(52, 75, 179);
+}
+.item:hover {
+  background-color: rgb(16, 77, 77);
+  color: rgb(255, 255, 255);
+  transition: 2ms ease-in;
+  border-bottom: 5px solid rgb(255, 255, 255);
+}
+.items:hover {
+  background-color: rgb(16, 77, 77);
+  color: rgb(255, 255, 255);
+  transition: 2ms ease-in;
+  border-bottom: 5px solid rgb(255, 255, 255);
+}
+main {
+  display: grid;
+  grid-template-columns: 3fr repeat(1, 1fr);
+  gap: 20px;
+}
+.items {
+  background-color: rgb(167, 232, 250);
+  height: 18.7rem;
+  margin: 20px;
+  border-bottom: 3px solid rgba(0, 0, 255, 0.342);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  color: rgb(52, 75, 179);
+  font-size: 25px;
+  text-align: center;
+}
+.items-containerr {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.item h1 {
+  font-size: 35px;
+}
+
+.item h2 {
+  font-size: 25px;
+}
+
+.item h3 {
+  font-size: 23px;
+}
+
+.item button {
+  width: 9rem;
+  height: 3rem;
+  background-color: rgb(52, 75, 179);
+  color: white;
+  font-size: 22px;
+  border: 2px solid rgb(52, 75, 179);
+  border-radius: 12px;
+}
+.items i {
+  font-size: 85px;
+}
+.items h1 {
+  font-size: 30px;
+}
+.items p {
+  text-align: center;
+}
+.items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+article {
+  padding: 40px;
+  background-color: rgb(167, 232, 250);
+  border-bottom: 3px solid rgb(52, 75, 179);
+  height: 30rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: rgb(52, 75, 179);
+}
+article img {
+  height: 25rem;
+}
+article h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+article p {
+  font-size: 20px;
+}
+article button {
+  margin-top: 20px;
+  width: 7rem;
+  height: 2rem;
+  font-size: 17px;
+  color: white;
+  background-color: rgb(52, 75, 179);
+  border: 3px solid rgb(52, 75, 179);
+}
+.image img {
+  height: 18rem;
+  width: 18rem;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  margin: 10px;
+}
+.image {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+
+@media screen and (max-width:500px) {
+  .image {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .image img {
+    height: 25rem;
+    width: 29rem;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    margin: 10px;
+  }
+  article{
+    height: 65rem;
+    grid-template-columns: 1fr;
+  }
+  article img{
+    width: 25rem;
+    height: 25rem;
+  }
+  .items-containerr {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width:1000px) {
+  .image {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .image img {
+    height: 25rem;
+    width: 23rem;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    margin: 10px;
+  }
+  article{
+    height: 65rem;
+    grid-template-columns: 1fr;
+  }
+  article img{
+    width: 40rem;
+    height: 25rem;
+  }
+  .items-containerr {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media screen and (max-width:1700px) {
+  .image {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .image img {
+    height: 50rem;
+    width: 50rem;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    margin: 10px;
+  }
+  article{
+    height: 65rem;
+    grid-template-columns: 1fr;
+  }
+  article img{
+    width: 40rem;
+    height: 25rem;
+  }
+  .items-containerr {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+footer{
+  height: 6rem;
+  margin: 14px;
+  background-color: rgb(51, 74, 178);
+  color: white;
+  text-align: center;
+  padding-top: 25px;
+}
+/* qarsilasdigim problemler  
+1 sekillere mecbur width verdim
+2 sekilleri her setirde dive yerlesdirdim
+
+*/
